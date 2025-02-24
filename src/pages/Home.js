@@ -14,15 +14,15 @@ const Home = () => {
       <section className="stats">
         <div className="stat-item">
           <h3>500+</h3>
-          <p>Families Helped</p>
+          <p>One Piece episodes watched</p>
         </div>
         <div className="stat-item">
           <h3>$200M+</h3>
-          <p>Loans Funded</p>
+          <p>in my bank account</p>
         </div>
         <div className="stat-item">
           <h3>15+</h3>
-          <p>Years Experience</p>
+          <p>Years Old</p>
         </div>
       </section>
 
