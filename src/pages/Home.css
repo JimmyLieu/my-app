@@ -90,7 +90,7 @@
 .cta-button {
   padding: 1rem 2rem;
   font-size: 1.2rem;
-  background-color: #007bff;
+  background-color: #27ae60;
   color: white;
   border: none;
   border-radius: 5px;
@@ -99,7 +99,7 @@
 }
 
 .cta-button:hover {
-  background-color: #0056b3;
+  background-color: #219150;
 }
 
 .stats {
@@ -113,14 +113,14 @@
 
 .stat-item h3 {
   font-size: 2.5rem;
-  color: #007bff;
+  color: #27ae60;
   margin-bottom: 0.5rem;
 }
 
 /* Loan Programs Section */
 .loan-programs {
   padding: 5rem 2rem;
-  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
 }
 
 .container {
@@ -170,7 +170,7 @@
   left: 0;
   right: 0;
   height: 4px;
-  background: linear-gradient(90deg, #007bff, #0056b3);
+  background: linear-gradient(90deg, #27ae60, #219150);
   transform: scaleX(0);
   transition: transform 0.3s ease;
 }
@@ -185,13 +185,13 @@
 }
 
 .loan-card.featured {
-  background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+  background: linear-gradient(135deg, #27ae60 0%, #219150 100%);
   color: white;
   border: none;
 }
 
 .loan-card.featured::before {
-  background: linear-gradient(90deg, #ffd700, #ffed4e);
+  background: linear-gradient(90deg, #b2ff59, #69f0ae);
 }
 
 .loan-icon {
@@ -222,9 +222,9 @@
 }
 
 .learn-more-btn {
-  background-color: #f8f9fa;
-  color: #007bff;
-  border: 2px solid #007bff;
+  background-color: #e8f5e9;
+  color: #27ae60;
+  border: 2px solid #27ae60;
   padding: 0.75rem 1.5rem;
   border-radius: 25px;
   font-size: 1rem;
@@ -235,19 +235,19 @@
 }
 
 .learn-more-btn:hover {
-  background-color: #007bff;
+  background-color: #27ae60;
   color: white;
   transform: translateY(-2px);
 }
 
 .learn-more-btn.primary {
   background-color: white;
-  color: #007bff;
+  color: #27ae60;
   border-color: white;
 }
 
 .learn-more-btn.primary:hover {
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: #e8f5e9;
   transform: translateY(-2px);
 }
 
