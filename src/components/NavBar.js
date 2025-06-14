@@ -21,7 +21,7 @@ const NavBar = ({ companyInfo }) => {
         <ul className={`nav-menu ${isOpen ? 'active' : ''}`}>
           <li><Link to="/" onClick={() => setIsOpen(false)}>Home</Link></li>
           <li><Link to="/loan-process" onClick={() => setIsOpen(false)}>Loan Process</Link></li>
-          <li><Link to="/loan-advice" onClick={() => setIsOpen(false)}>Loan Advice</Link></li>
+          <li><Link to="/mortgage-calculator" onClick={() => setIsOpen(false)}>Mortgage Calculator</Link></li>
           <li><Link to="/about" onClick={() => setIsOpen(false)}>About</Link></li>
           <li><Link to="/contact" onClick={() => setIsOpen(false)}>Contact</Link></li>
         </ul>

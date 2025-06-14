@@ -1,6 +1,7 @@
-import { BrowserRouter as Router } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import NavBar from './components/NavBar';
 import Home from './pages/Home';
+import MortgageCalculator from './pages/MortgageCalculator';
 
 function App() {
   const companyInfo = {
@@ -14,7 +15,10 @@ function App() {
     <Router>
       <div className="App">
         <NavBar companyInfo={companyInfo} />
-        <Home />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/mortgage-calculator" element={<MortgageCalculator />} />
+        </Routes>
       </div>
     </Router>
   );

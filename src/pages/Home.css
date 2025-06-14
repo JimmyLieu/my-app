@@ -55,11 +55,14 @@
 .professional-photo {
   max-width: 400px;
   text-align: center;
+  width: 100%;
 }
 
 .advisor-photo {
   width: 250px;
   height: 300px;
+  max-width: 100%;
+  height: auto;
   object-fit: cover;
   border-radius: 15px;
   margin-bottom: 1.5rem;
@@ -283,6 +286,8 @@
     gap: 2rem;
     padding: 2rem 1rem;
     text-align: center;
+    height: auto;
+    min-height: 100vh;
   }
 
   .hero h1 {
@@ -295,11 +300,17 @@
 
   .professional-photo {
     order: -1;
+    max-width: 90vw;
+    width: 100%;
+    margin-bottom: 1.5rem;
   }
 
   .advisor-photo {
-    width: 200px;
-    height: 240px;
+    width: 100%;
+    max-width: 220px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .intro-tagline h3 {
