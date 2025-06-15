@@ -8,7 +8,6 @@ const translations = {
     title: "Financing Made Simple",
     subheadline: "Your trusted mortgage advisor — here to help in English & Español.",
     bilingualText: "¿Hablas español? ¡Yo también!",
-    ctaButton: "Get Pre-Approved Today",
     meetExpert: "Meet Your Mortgage Expert",
     expertDescription: "I proudly serve both English and Spanish-speaking clients throughout Texas and beyond.",
     loanPrograms: "Loan Programs I Offer",
@@ -129,14 +128,10 @@ const Home = () => {
         <div className="hero-content">
           <h1>{t.title}</h1>
           <p className="subheadline">{t.subheadline}</p>
-          <div className="bilingual-toggle">
-            <span className="bilingual-text">{t.bilingualText}</span>
-          </div>
-          <button className="cta-button">{t.ctaButton}</button>
           <button 
             className="cta-button" 
             onClick={toggleLanguage}
-            style={{ marginLeft: '1rem' }}
+            style={{ marginLeft: 0 }}
           >
             {language === 'en' ? 'Español' : 'English'}
           </button>
@@ -217,6 +212,32 @@ const Home = () => {
               <h3>{t.moreOptions.title}</h3>
               <p>{t.moreOptions.description}</p>
               <button className="learn-more-btn primary">{t.moreOptions.button}</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* Testimonials Section */}
+      <section className="testimonials">
+        <div className="container">
+          <h2>What My Clients Say</h2>
+          <div className="testimonial-grid">
+            <div className="testimonial-card">
+              <div style={{color: '#fbbc05', fontSize: '1.2rem', marginBottom: 4}}>★★★★★</div>
+              <p className="testimonial-quote">“Pedro was very helpful with us in our process in becoming first time homeowners. He made everything easy for us and would take the time to explain every detail of the process. When an issue would come up in any of our documents he would guide us step by step to resolve any issues. We are very grateful to have worked with him to accomplish our goal in becoming homeowners.
+              ”</p>
+              <div className="testimonial-author">— Wendy D. (Google Review)</div>
+            </div>
+            <div className="testimonial-card">
+              <div style={{color: '#fbbc05', fontSize: '1.2rem', marginBottom: 4}}>★★★★★</div>
+              <p className="testimonial-quote">“I was very pleased with all aspect of this sale it was speedy and professional my wife and I were able to close in less then 2 weeks all parties were fast and very obvious that they cared as much as we did and were excited for us if not even more excited then we were to purchase a home. Very pleased with pedro will def do business again in the future
+              ”</p>
+              <div className="testimonial-author">— Rigo A. (Google Review)</div>
+            </div>
+            <div className="testimonial-card">
+              <div style={{color: '#fbbc05', fontSize: '1.2rem', marginBottom: 4}}>★★★★★</div>
+              <p className="testimonial-quote">“The purchasing process of the house was an extraordinary experience. The service was outstanding, and I would like to express my sincere gratitude for all your assistance.
+              1000% recommended 👌”</p>
+              <div className="testimonial-author">— Julio R. (Google Review)</div>
             </div>
           </div>
         </div>

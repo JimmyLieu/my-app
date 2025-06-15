@@ -80,3 +80,36 @@
       right: 0;
     }
   }
+
+  .apply-now-btn {
+    background: #27ae60;
+    color: #fff !important;
+    padding: 0.5rem 1.5rem;      /* Slightly less vertical padding */
+    border-radius: 25px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.3s, color 0.3s;
+    border: none;
+    display: flex;               /* Use flex to center text vertically */
+    align-items: center;         /* Center text vertically */
+    height: 40px;                /* Match the height of nav links if needed */
+    margin-left: 0.5rem;
+    box-sizing: border-box;
+  }
+  
+  .nav-menu li {
+    display: flex;
+    align-items: center;
+  }
+.apply-now-btn:hover {
+  background: #219150;
+  color: #fff !important;
+}
+
+@media (max-width: 768px) {
+  .apply-now-btn {
+    margin: 1rem 0 0 0;
+    width: 80%;
+    text-align: center;
+  }
+}

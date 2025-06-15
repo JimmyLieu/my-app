@@ -23,6 +23,17 @@ const NavBar = ({ companyInfo }) => {
           <li><Link to="/mortgage-calculator" onClick={() => setIsOpen(false)}>Mortgage Calculator</Link></li>
           <li><Link to="/about" onClick={() => setIsOpen(false)}>About</Link></li>
           <li><Link to="/contact" onClick={() => setIsOpen(false)}>Contact</Link></li>
+          <li>
+            <a
+              href="https://thelendingvillage.my1003app.com/2167513/register"
+              className="apply-now-btn"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setIsOpen(false)}
+            >
+              Apply Now
+            </a>
+          </li>
         </ul>
       </div>
     </nav>
