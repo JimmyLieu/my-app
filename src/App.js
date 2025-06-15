@@ -7,9 +7,9 @@ import Contact from './pages/Contact';
 function App() {
   const companyInfo = {
     name: "Pedro Ontiveros",
-    lenderName: "John Doe",
+    lenderName: "Pedro Ontiveros",
     phone: "(555) 123-4567",
-    email: "john@thelendingvillage.com"
+    email: "pedro@thelendingvillage.com"
   };
 
   return (
