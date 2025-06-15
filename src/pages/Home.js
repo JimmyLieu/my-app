@@ -1,5 +1,6 @@
 import './Home.css';
 import pedroImage from '../assets/pedro.png';
+import videoFile from '../assets/IMG_7795.MOV';
 import { useState } from 'react';
 
 const translations = {
@@ -102,13 +103,28 @@ const translations = {
 const Home = () => {
   const [language, setLanguage] = useState('en');
   const t = translations[language];
+  const [showModal, setShowModal] = useState(false);
 
   const toggleLanguage = () => {
     setLanguage(prev => prev === 'en' ? 'es' : 'en');
   };
 
+  const openModal = () => setShowModal(true);
+  const closeModal = () => setShowModal(false);
+
   return (
     <div className="home">
+      {showModal && (
+        <div className="video-modal-overlay" onClick={closeModal}>
+          <div className="video-modal" onClick={e => e.stopPropagation()}>
+            <button className="close-modal" onClick={closeModal}>&times;</button>
+            <video controls autoPlay style={{ width: '100%', borderRadius: '10px' }}>
+              <source src={videoFile} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+      )}
       <section className="hero">
         <div className="hero-content">
           <h1>{t.title}</h1>
@@ -144,48 +160,56 @@ const Home = () => {
               <div className="loan-icon">🏠</div>
               <h3>{t.fhaLoans.title}</h3>
               <p>{t.fhaLoans.description}</p>
+              <button className="learn-more-btn" onClick={openModal}>Learn More</button>
             </div>
 
             <div className="loan-card">
               <div className="loan-icon">🏛️</div>
               <h3>{t.conventionalLoans.title}</h3>
               <p>{t.conventionalLoans.description}</p>
+              <button className="learn-more-btn" onClick={openModal}>Learn More</button>
             </div>
 
             <div className="loan-card">
               <div className="loan-icon">🇺🇸</div>
               <h3>{t.vaLoans.title}</h3>
               <p>{t.vaLoans.description}</p>
+              <button className="learn-more-btn" onClick={openModal}>Learn More</button>
             </div>
 
             <div className="loan-card">
               <div className="loan-icon">🌾</div>
               <h3>{t.usdaLoans.title}</h3>
               <p>{t.usdaLoans.description}</p>
+              <button className="learn-more-btn" onClick={openModal}>Learn More</button>
             </div>
 
             <div className="loan-card">
               <div className="loan-icon">📄</div>
               <h3>{t.bankStatementLoans.title}</h3>
               <p>{t.bankStatementLoans.description}</p>
+              <button className="learn-more-btn" onClick={openModal}>Learn More</button>
             </div>
 
             <div className="loan-card">
               <div className="loan-icon">📊</div>
               <h3>{t.dscrLoans.title}</h3>
               <p>{t.dscrLoans.description}</p>
+              <button className="learn-more-btn" onClick={openModal}>Learn More</button>
             </div>
 
             <div className="loan-card">
               <div className="loan-icon">🏢</div>
               <h3>{t.investorLoans.title}</h3>
               <p>{t.investorLoans.description}</p>
+              <button className="learn-more-btn" onClick={openModal}>Learn More</button>
             </div>
 
             <div className="loan-card">
               <div className="loan-icon">🔑</div>
               <h3>{t.firstTimeBuyer.title}</h3>
               <p>{t.firstTimeBuyer.description}</p>
+              <button className="learn-more-btn" onClick={openModal}>Learn More</button>
             </div>
 
             <div className="loan-card featured">
